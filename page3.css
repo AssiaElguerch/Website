@@ -1,0 +1,151 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Pattaya', sans-serif;
+           
+   
+   }
+   body{
+   width:100% ;
+   height: 100vh;
+   background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://wallpaperaccess.com/full/5522178.jpg);
+   background-position: center;
+   background-size: cover;
+   padding-left: 8%;
+   padding-right: 8%;
+   box-sizing: border-box;
+   }
+   .two{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+
+  width: 70px;
+  cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+nav ul li {
+
+    list-style: none;
+     display: inline-block;
+     margin-left: 60px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+
+}
+nav ul li :hover {
+   text-decoration: none;
+   color: white;
+   font-size: 35px;
+
+}
+      .wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 550px;
+        background: rgba(0,0,0,0.8);
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      }
+      
+      .wrapper .title h1{
+        color: #c5ecfd;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      
+      .contact-form{
+        display: flex;
+      }
+      
+      .input-fields{
+        display: flex;
+        flex-direction: column;
+        margin-right: 4%;
+      }
+      
+      .input-fields,
+      .msg{
+        width: 48%;
+      }
+      
+      .input-fields .input,
+      .msg textarea{
+        margin: 10px 0;
+        background: transparent;
+        border: 0px;
+        border-bottom: 2px solid #c5ecfd;
+        padding: 10px;
+        color: #c5ecfd;
+        width: 100%;
+      }
+      
+      .msg textarea{
+        height: 212px;
+      }
+      
+      ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #c5ecfd;
+      }
+      ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #c5ecfd;
+      }
+      :-ms-input-placeholder {
+        /* IE 10+ */
+        color: #c5ecfd;
+      }
+      
+      .btn {
+          background: 
+
+          #9900cc;
+          text-align: center;
+          padding: 15px;
+          border-radius: 5px;
+          color: white;
+          cursor: pointer;
+          text-transform: uppercase;
+      }
+      .btn:hover{
+
+        background-color: white;
+        color: 
+
+        #9900cc;
+      }
+      .o{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+    
+    }
+      
+      @media screen and (max-width: 600px){
+        .contact-form{
+          flex-direction: column;
+        }
+        .msg textarea{
+          height: 80px;
+        }
+        .input-fields,
+        .msg{
+          width: 100%;
+        }
+      } 
+
